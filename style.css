@@ -1,0 +1,2362 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 50px;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #5f0909;
+}
+
+
+/* =========================
+   PORTADA
+========================= */
+
+.inicio {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("./img/fotodeportada.jpeg")
+        center/cover no-repeat;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.contenido-inicio {
+    margin-top: 60px;
+}
+
+.subtitulo {
+    font-size: 14px;
+    letter-spacing: 6px;
+    color: #bdbdbd;
+    margin-bottom: 20px;
+}
+
+.contenido-inicio h2 {
+    font-size: clamp(50px, 10vw, 130px);
+    line-height: 0.85;
+    letter-spacing: -4px;
+    font-weight: 900;
+}
+
+.frase {
+    margin-top: 30px;
+
+    color: #d0d0d0;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+button {
+    margin-top: 40px;
+
+    padding: 15px 40px;
+
+    background-color: transparent;
+
+    border: 1px solid #fff;
+
+    color: #fff;
+
+    font-size: 14px;
+    letter-spacing: 3px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #550101;
+    border-color: #691212;
+
+    transform: scale(1.05);
+}
+/* =========================
+   SECCIÓN EXPLORAR
+========================= */
+
+.explorar {
+    min-height: 100vh;
+    padding: 120px 8%;
+    background: #050505;
+}
+
+.titulo-seccion {
+    margin-bottom: 70px;
+}
+
+.titulo-seccion p {
+    color: hsl(0, 84%, 20%);
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.titulo-seccion h2 {
+    font-size: clamp(40px, 6vw, 80px);
+    line-height: 0.95;
+    max-width: 700px;
+    text-transform: uppercase;
+}
+
+/* TARJETAS */
+
+.opciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.opcion {
+    position: relative;
+    min-height: 230px;
+
+    padding: 35px;
+
+    text-decoration: none;
+    color: #fff;
+
+    /*background: #0d0d0d;
+    border: 1px solid #1c1c1c;*/
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    overflow: hidden;
+
+    transition: 0.4s ease;
+}
+
+.opcion:nth-child(1) {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("img/musi.jpg");
+}
+
+.opcion:nth-child(2) {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("img/labanda.jpg");
+}
+
+.opcion:nth-child(3) {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("img/pt.jpeg");
+}
+
+.opcion:nth-child(4) {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("img/musica.jpg");
+}
+
+.opcion:nth-child(5) {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("img/port.png");
+}
+
+.opcion:nth-child(6) {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("img/portcol.png");
+}
+
+.opcion::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        135deg,
+        transparent 60%,
+        rgba(208, 0, 0, 0.15)
+    );
+
+    opacity: 0;
+
+    transition: 0.4s ease;
+}
+
+.opcion:hover {
+    transform: translateY(-8px);
+    border-color: #750b0b;
+}
+
+.opcion:hover::before {
+    opacity: 1;
+}
+
+.opcion span {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+
+    font-size: 12px;
+    color: #555;
+    letter-spacing: 2px;
+}
+
+.opcion h3 {
+    position: relative;
+
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    transition: 0.3s;
+}
+
+.opcion:hover h3 {
+    color: #640909;
+}
+
+.opcion p {
+    position: relative;
+
+    color: #888;
+    font-size: 14px;
+    line-height: 1.5;
+
+    max-width: 300px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .opciones {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+        #menu-toggle {
+        display: block;
+    }
+
+    header {
+        position: fixed;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 20px;
+    }
+
+    nav.menu-abierto {
+        display: flex;
+    }
+
+    nav a {
+        padding: 12px 0;
+        border-bottom: 1px solid #222;
+    }
+    .explorar {
+        padding: 100px 25px;
+    }
+
+    .opciones {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   SECCIÓN MÚSICA
+========================= */
+
+.musica {
+    min-height: 100vh;
+    padding: 120px 8%;
+    background: #000;
+}
+
+.musica-contenido {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 80px;
+}
+
+.musica-texto {
+    color: #888;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 350px;
+}
+
+.musica-texto p {
+    margin-bottom: 25px;
+}
+
+.albumes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.album {
+    background: #080808;
+    border: 1px solid #1b1b1b;
+    transition: 0.4s ease;
+}
+
+.album:hover {
+    transform: translateY(-8px);
+    border-color: #630e0e;
+}
+
+.album-imagen {
+    height: 280px;
+    overflow: hidden;
+}
+
+.album-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+}
+
+.album:hover .album-imagen img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.album-info {
+    padding: 25px;
+}
+
+.album-info span {
+    color: #720d0d;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.album-info h3 {
+    margin: 12px 0;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.album-info p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =========================
+   SECCIÓN LA BANDA
+========================= */
+
+.banda {
+    min-height: 100vh;
+    padding: 120px 8%;
+    background: #050505;
+}
+
+.banda-contenido {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.banda-imagen {
+    height: 550px;
+    overflow: hidden;
+}
+
+.banda-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 0.6s ease;
+}
+
+.banda-imagen:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.04);
+}
+
+.banda-texto {
+    max-width: 500px;
+}
+
+.banda-texto > span {
+    color: #630f0f;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.banda-texto h3 {
+    font-size: 42px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 20px 0 30px;
+}
+
+.banda-texto p {
+    color: #888;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   SECCIÓN RECITALES
+========================= */
+
+.recitales {
+    min-height: 100vh;
+    padding: 120px 8%;
+    background: #000;
+}
+
+.recital-principal {
+    position: relative;
+    margin-top: 60px;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 0;
+    align-items: center;
+}
+
+.recital-imagen {
+    height: 600px;
+    overflow: hidden;
+}
+
+.recital-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0%);
+    transition: 0.6s ease;
+}
+
+.recital-imagen:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.04);
+}
+
+.recital-info {
+    position: relative;
+    z-index: 2;
+    background: #080808;
+    padding: 55px;
+    margin-left: -80px;
+    border-left: 2px solid #000000;
+}
+
+.recital-info > span {
+    color: #700e0e;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.recital-info h3 {
+    font-size: 38px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    margin: 20px 0 30px;
+}
+
+.recital-info p {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.recital-dato {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #222;
+}
+
+.recital-dato strong {
+    color: #7c1111;
+    font-size: 13px;
+}
+
+.recital-dato span {
+    color: #ccc;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* =========================
+   SECCIÓN GALERÍA
+=========================*/
+
+.galeria {
+    min-height: 100vh;
+    padding: 120px 8%;
+    background: #050505;
+}
+
+.galeria-grid {
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+    gap: 15px;
+}
+
+.foto {
+    position: relative;
+    overflow: hidden;
+    background: #111;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    filter: grayscale(0%);
+
+    transition: 0.5s ease;
+}
+
+.foto:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.06);
+}
+
+.foto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.5),
+        transparent
+    ); 
+
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.foto:hover::after {
+    opacity: 1;
+}
+
+.foto-grande {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+/*
+.foto-ancha {
+    grid-column: span 2;
+}*/
+
+
+/* =========================
+   SECCIÓN JUEGO
+========================= */
+
+.quiz {
+    min-height: 100vh;
+    padding: 120px 8%;
+    background: #000;
+}
+
+.quiz-contenedor {
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 40px;
+}
+
+.quiz-intro,
+.quiz-pregunta {
+    background: #080808;
+    border: 1px solid #1b1b1b;
+    padding: 50px;
+}
+
+.quiz-intro {
+    border-top: 2px solid #791111;
+}
+
+.quiz-intro > span,
+.quiz-pregunta > span {
+    color: #7a1212;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.quiz-intro h3 {
+    font-size: 40px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.quiz-intro p {
+    color: #888;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+#comenzar-quiz {
+    padding: 14px 25px;
+    background: #7c0d0d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    transition: 0.3s ease;
+}
+
+#comenzar-quiz:hover {
+    background: #fff;
+    color: #000;
+}
+
+.quiz-pregunta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quiz-pregunta h3 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 25px 0 35px;
+}
+
+.respuestas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.respuesta {
+    padding: 18px;
+    background: transparent;
+    border: 1px solid #333;
+    color: #ccc;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.respuesta:hover {
+    border-color: #720f0f;
+    color: white;
+    background: #111;
+}
+
+/* =========================
+   RESPUESTAS DEL JUEGO
+========================= */
+
+.respuesta.correcta {
+    background: #173b20;
+    border-color: #3fa55b;
+    color: #fff;
+}
+
+.respuesta.incorrecta {
+    background: #3b1717;
+    border-color: #c03939;
+    color: #fff;
+}
+
+.progreso {
+    width: 100%;
+    height: 4px;
+    background: #222;
+    margin-bottom: 35px;
+}
+
+#barra-progreso {
+    width: 0%;
+    height: 100%;
+    background: #d00000;
+    transition: 0.4s ease;
+}
+
+/* =========================
+   RESULTADO DEL JUEGO
+========================= */
+
+.resultado {
+    text-align: center;
+    padding: 20px;
+}
+
+.resultado > span {
+    color: #d00000;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.puntaje {
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 25px 0;
+}
+
+.puntaje small {
+    font-size: 35px;
+    color: #555;
+}
+
+.resultado h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.resultado p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+#reiniciar-quiz {
+    padding: 14px 28px;
+    background: #d00000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    transition: 0.3s ease;
+}
+
+#reiniciar-quiz:hover {
+    background: white;
+    color: #000;
+}
+
+/* =========================
+   TU EXPERIENCIA
+========================= */
+
+.experiencia {
+    min-height: 100vh;
+    padding: 120px 8%;
+    background: #050505;
+}
+
+.experiencia-contenido {
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.experiencia-texto {
+    max-width: 450px;
+}
+
+.experiencia-texto > span {
+    color: #961515;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.experiencia-texto h3 {
+    font-size: 42px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 25px 0 30px;
+}
+
+.experiencia-texto p {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.experiencia-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #080808;
+    padding: 40px;
+    border: 1px solid #1b1b1b;
+    border-top: 2px solid #940f0f;
+}
+
+.experiencia-form label {
+    color: #aaa;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.experiencia-form input,
+.experiencia-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background: #111;
+    border: 1px solid #292929;
+    color: #ffffff9d;
+    font-family: inherit;
+    outline: none;
+    resize: vertical;
+    transition: 0.3s ease;
+}
+
+.experiencia-form input:focus,
+.experiencia-form textarea:focus {
+    border-color: #850e0e;
+}
+
+.experiencia-form button {
+    margin-top: 15px;
+    padding: 16px;
+    background: #961010;
+    color: rgba(255, 255, 255, 0.952);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    transition: 0.3s ease;
+}
+
+.experiencia-form button:hover {
+    background: rgba(255, 255, 255, 0.63);
+    color: #000;
+}
+
+.experiencias-publicadas {
+    margin-top: 50px;
+    display: grid;
+    gap: 15px;
+}
+
+.experiencia-card {
+    padding: 25px;
+    background: #080808;
+    border-left: 2px solid #850e0e;
+}
+
+.experiencia-card span {
+    color: #911414;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.experiencia-card h4 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.experiencia-card p {
+    color: #888;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.experiencia-card .cancion {
+    color: #ccccccb2;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .musica-contenido,
+    .banda-contenido,
+    .recital-principal,
+    .juego-contenedor,
+    .experiencia-contenido {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .albumes {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .banda-imagen {
+        height: 450px;
+    }
+
+    .recital-imagen {
+        height: 450px;
+    }
+
+    .recital-info {
+        margin-left: 0;
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .foto-grande {
+        grid-column: span 2;
+    }
+
+    .foto-ancha {
+        grid-column: span 2;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .musica,
+    .banda,
+    .recitales,
+    .galeria,
+    .juego,
+    .experiencia {
+        padding: 90px 6%;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 30px;
+    }
+
+    .musica-texto,
+    .banda-texto,
+    .experiencia-texto {
+        max-width: 100%;
+    }
+
+    .albumes {
+        grid-template-columns: 1fr;
+    }
+
+    .banda-imagen {
+        height: 350px;
+    }
+
+    .recital-imagen {
+        height: 350px;
+    }
+
+    .recital-info {
+        padding: 30px;
+    }
+
+    .recital-info h3 {
+        font-size: 28px;
+    }
+
+    .juego-intro,
+    .juego-pregunta {
+        padding: 30px;
+    }
+
+    .juego-intro h3 {
+        font-size: 30px;
+    }
+
+    .juego-pregunta h3 {
+        font-size: 24px;
+    }
+
+    .respuestas {
+        grid-template-columns: 1fr;
+    }
+
+    .experiencia-contenido {
+        gap: 30px;
+    }
+
+    .experiencia-texto h3 {
+        font-size: 32px;
+    }
+
+    .experiencia-form {
+        padding: 25px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
+    }
+
+    .foto-grande,
+    .foto-ancha {
+        grid-column: span 1;
+    }
+}
+
+/* =========================
+   DETALLES FINALES
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 80px;
+}
+.titulo-seccion {
+    position: relative;
+}
+
+.titulo-seccion p {
+    color: #d00000;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.titulo-seccion h2 {
+    font-size: 42px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: #d00000;
+
+    transition: 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   MENÚ PARA CELULAR
+========================= */
+
+#menu-toggle {
+    display: none;
+
+    background: transparent;
+    border: none;
+    color: #fff;
+
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   CANCIONES DESTACADAS
+========================= */
+
+.canciones {
+    background: #080808;
+    border: 1px solid #1b1b1b;
+    padding: 35px;
+    transition: 0.4s ease;
+}
+
+.canciones:hover {
+    border-color: #292929;
+}
+
+/* TÍTULO */
+
+.canciones-titulo {
+    margin-bottom: 30px;
+}
+
+.canciones-titulo > span {
+    color: #d00000;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.canciones-titulo h3 {
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 15px 0 10px;
+}
+
+.canciones-titulo p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* LISTA */
+
+.lista-canciones {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CADA CANCIÓN */
+
+.cancion {
+    display: grid;
+    grid-template-columns: 45px 1fr 45px;
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px 5px;
+
+    border-bottom: 1px solid #222;
+
+    transition: 0.3s ease;
+}
+
+.cancion:last-child {
+    border-bottom: none;
+}
+
+.cancion:hover {
+    background: #111;
+    padding-left: 12px;
+}
+
+/* NÚMERO */
+
+.numero-cancion {
+    color: #555;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* INFORMACIÓN */
+
+.info-cancion h4 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.info-cancion p {
+    color: #666;
+    font-size: 12px;
+}
+
+/* BOTÓN PLAY */
+
+.cancion .play {
+    width: 38px;
+    height: 38px;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: 1px solid #d00000;
+
+    background: transparent;
+    color: #d00000;
+
+    font-size: 13px;
+    letter-spacing: 0;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.cancion .play:hover {
+    background: #d00000;
+    border-color: #d00000;
+    color: #fff;
+
+    transform: scale(1.08);
+}
+
+/* =========================
+   DISCOGRAFÍA
+========================= */
+
+.discografia {
+    background: #080808;
+    border: 1px solid #1b1b1b;
+    padding: 35px;
+}
+
+.discografia-titulo {
+    margin-bottom: 25px;
+}
+
+.discografia-titulo > span {
+    color: #d00000;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.discografia-titulo h3 {
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+/* BOTONES DE ÁLBUM */
+
+.album-lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.album-boton {
+    width: 100%;
+
+    margin: 0;
+    padding: 17px 5px;
+
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    gap: 15px;
+
+    align-items: center;
+
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #222;
+
+    color: #fff;
+
+    text-align: left;
+    letter-spacing: normal;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.album-boton:last-child {
+    border-bottom: none;
+}
+
+.album-boton:hover {
+    background: #111;
+    padding-left: 12px;
+}
+
+.album-boton > span {
+    color: #555;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.album-boton strong {
+    display: block;
+
+    color: #ccc;
+
+    font-size: 14px;
+    font-weight: normal;
+
+    line-height: 1.3;
+}
+
+.album-boton small {
+    display: block;
+
+    color: #555;
+
+    font-size: 11px;
+
+    margin-top: 3px;
+}
+
+/* =========================
+   MÚSICA - RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .musica-contenido {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .canciones,
+    .discografia {
+        padding: 25px;
+    }
+
+    .canciones-titulo h3,
+    .discografia-titulo h3 {
+        font-size: 26px;
+    }
+
+    .cancion {
+        grid-template-columns: 35px 1fr 40px;
+        gap: 10px;
+    }
+
+    .info-cancion h4 {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================
+   REPRODUCTOR SPOTIFY
+========================= */
+
+.spotify-player {
+    margin-top: 30px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.spotify-player iframe {
+    display: block;
+    width: 100%;
+    min-height: 152px;
+    border-radius: 12px;
+    border: none;
+}
+
+.spotify-mensaje {
+    color: #666;
+    text-align: center;
+    font-size: 13px;
+    padding: 20px;
+    margin: 0;
+    border: 1px solid #1b1b1b;
+    background: #080808;
+}
+
+/* =========================
+   NUEVA DISCOGRAFÍA
+========================= */
+
+.album-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.album-boton {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: #080808;
+    border: 1px solid #1c1c1c;
+
+    color: white;
+    text-align: left;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.album-boton img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.album-boton:hover {
+    background: #111;
+    border-color: #d00000;
+    transform: translateX(5px);
+}
+
+.album-boton.activo {
+    border-color: #d00000;
+    background: #111;
+}
+
+.album-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.album-info strong {
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.album-info small {
+    color: #666;
+    font-size: 11px;
+}
+
+
+/* =========================
+   ÁLBUM SELECCIONADO
+========================= */
+
+.album-seleccionado {
+    display: none;
+}
+
+.album-seleccionado.activo {
+    display: block;
+    animation: aparecerAlbum 0.4s ease;
+}
+
+@keyframes aparecerAlbum {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   MENSAJE INICIAL
+========================= */
+
+.album-vacio {
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    border: 1px solid #1b1b1b;
+    background: #080808;
+
+    padding: 40px;
+}
+
+.album-vacio span {
+    color: #d00000;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.album-vacio h3 {
+    color: white;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 15px 0 10px;
+}
+
+.album-vacio p {
+    color: #666;
+    font-size: 13px;
+    max-width: 350px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ENCABEZADO DEL ÁLBUM
+========================= */
+
+.album-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #222;
+}
+
+.album-header img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.album-header span {
+    color: #d00000;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.album-header h3 {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 10px 0 7px;
+}
+
+.album-header p {
+    color: #666;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .album-boton img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .album-header {
+        gap: 15px;
+    }
+
+    .album-header img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .album-header h3 {
+        font-size: 22px;
+    }
+
+    .album-vacio h3 {
+        font-size: 25px;
+    }
+}
+
+/* =========================
+   CANCIONES DESTACADAS
+========================= */
+
+.canciones-destacadas {
+    margin-top: 50px;
+    background: #080808;
+    border: 1px solid #1b1b1b;
+    padding: 35px;
+}
+
+.canciones-destacadas .canciones-titulo {
+    margin-bottom: 30px;
+}
+
+.canciones-destacadas .canciones-titulo > span {
+    color: #d00000;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.canciones-destacadas .canciones-titulo h3 {
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 15px 0 10px;
+}
+
+.canciones-destacadas .canciones-titulo p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* LISTA */
+
+.canciones-destacadas .lista-canciones {
+    display: flex;
+    flex-direction: column;
+}
+
+.canciones-destacadas .cancion {
+    display: grid;
+    grid-template-columns: 45px 1fr 45px;
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px 5px;
+
+    border-bottom: 1px solid #222;
+
+    transition: 0.3s ease;
+}
+
+.canciones-destacadas .cancion:last-child {
+    border-bottom: none;
+}
+
+.canciones-destacadas .cancion:hover {
+    background: #111;
+    padding-left: 12px;
+}
+
+
+/* NÚMERO */
+
+.canciones-destacadas .numero-cancion {
+    color: #555;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+
+/* INFORMACIÓN */
+
+.canciones-destacadas .info-cancion h4 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.canciones-destacadas .info-cancion p {
+    color: #666;
+    font-size: 12px;
+}
+
+
+/* BOTÓN PLAY */
+
+.canciones-destacadas .play {
+    width: 38px;
+    height: 38px;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: 1px solid #d00000;
+
+    background: transparent;
+    color: #d00000;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.canciones-destacadas .play:hover {
+    background: #d00000;
+    color: #fff;
+    transform: scale(1.08);
+}
+
+
+/* SPOTIFY */
+
+.canciones-destacadas .spotify-player {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+}
+
+.canciones-destacadas .spotify-player iframe {
+    width: 100%;
+    height: 152px;
+    border: none;
+    border-radius: 12px;
+}
+
+.canciones-destacadas .spotify-mensaje {
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    padding: 18px;
+    margin: 0;
+    border: 1px solid #222;
+    background: #050505;
+}
+
+
+/* =========================
+   SPOTIFY
+========================= */
+
+.spotify-player {
+    margin-top: 25px;
+    padding-top: 20px;
+
+    border-top: 1px solid #222;
+}
+
+.spotify-player iframe {
+    display: block;
+
+    width: 100%;
+    height: 152px;
+
+    border: none;
+    border-radius: 12px;
+}
+
+.spotify-mensaje {
+    color: #666;
+    text-align: center;
+
+    font-size: 13px;
+
+    padding: 20px;
+
+    border: 1px solid #1b1b1b;
+    background: #080808;
+}
+/* =========================================
+   CANCIONES DE LOS ÁLBUMES
+========================================= */
+
+.album-seleccionado .lista-canciones {
+    margin-top: 35px;
+}
+
+/* Título "CANCIONES" */
+
+.album-seleccionado .lista-canciones h4 {
+    margin: 0 0 15px 0;
+
+    color: #d00000;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/* Cada canción */
+
+.album-seleccionado .lista-canciones p {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 55px;
+
+    margin: 0;
+    padding: 0 45px 0 18px;
+
+    border-top: 1px solid #222;
+
+    color: #bdbdbd;
+
+    font-size: 14px;
+    letter-spacing: 0.3px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        padding-left 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Línea inferior en la última canción */
+
+.album-seleccionado .lista-canciones p:last-child {
+    border-bottom: 1px solid #222;
+}
+
+/* Hover */
+
+.album-seleccionado .lista-canciones p:hover {
+
+    padding-left: 28px;
+
+    background: #0c0c0c;
+
+    color: #ffffff;
+
+    border-top-color: #d00000;
+}
+
+/* Flecha al hacer hover */
+
+.album-seleccionado .lista-canciones p:hover::after {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+    color: #d00000;
+}
+
+/* Número de canción */
+
+.album-seleccionado .lista-canciones p::first-letter {
+    color: #666;
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 768px) {
+
+    .album-seleccionado .lista-canciones {
+        margin-top: 25px;
+    }
+
+    .album-seleccionado .lista-canciones p {
+
+        min-height: 50px;
+
+        padding: 0 38px 0 12px;
+
+        font-size: 13px;
+    }
+
+    .album-seleccionado .lista-canciones p:hover {
+        padding-left: 18px;
+    }
+
+    .album-seleccionado .lista-canciones p::after {
+        right: 12px;
+    }
+}
+
+/* INTEGRANTES */
+.integrante-info {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+    padding: 0 30px;
+}
+
+.integrante-info.activo {
+    max-height: 300px;
+    opacity: 1;
+    padding: 20px 30px 25px;
+}
+.integrante-boton img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+/* =================================================
+   INTEGRANTES
+================================================= */
+
+.integrantes {
+    padding: 60px 40px;
+}
+
+/* Título */
+.integrantes-titulo {
+    margin-bottom: 40px;
+}
+
+.integrantes-titulo span {
+    color: #ff0000;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.integrantes-titulo h3 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.integrantes-titulo p {
+    color: #aaa;
+}
+
+
+/* CONTENEDOR DE LAS TARJETAS */
+
+.integrante {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 2.5%;
+    margin-bottom: 30px;
+}
+
+.integrante:last-child {
+    margin-right: 0;
+}
+
+
+/* BOTÓN */
+
+.integrante-boton {
+    width: 100%;
+    min-height: 170px;
+    padding: 20px;
+    background: #111;
+    border: 1px solid #333;
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+
+.integrante-boton:hover {
+    border-color: #ff0000;
+    transform: translateY(-5px);
+}
+
+
+/* FOTOS */
+
+.integrante-boton img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+
+/* NÚMERO */
+
+.integrante-boton span {
+    display: none;
+}
+
+
+/* NOMBRE */
+
+.integrante-boton h4 {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+
+
+/* ROL */
+
+.integrante-boton p {
+    margin: 0;
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+/* SIGNO + */
+
+.integrante-boton strong {
+    color: #ff0000;
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+
+/* INFORMACIÓN DESPLEGABLE */
+
+.integrante-info {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    background: #111;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 0 20px;
+
+    transition: all 0.4s ease;
+}
+
+.integrante-info.activo {
+    max-height: 300px;
+    opacity: 1;
+    padding: 20px;
+}
+
+.integrante-info p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.integrante-info strong {
+    color: #fff;
+}
+/* =================================================
+   CIUDADES - RECITALES
+================================================= 
+
+.ciudades-recitales {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+*/
+
+/* TARJETA DE CADA CIUDAD
+
+.ciudad-recital {
+    background: #111;
+    padding: 28px 30px;
+    border: 1px solid #2a2a2a;
+    border-radius: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: all 0.3s ease;
+} */
+
+
+/* BANDERA 
+.ciudad-recital span {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+*/
+
+
+/* CIUDAD 
+
+.ciudad-recital h3 {
+    margin: 0 0 8px;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 1px;
+}*/
+
+
+/* ESTADIO / LUGAR 
+
+.ciudad-recital p {
+    margin: 0;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.5;
+}*/
+
+
+/* EFECTO AL PASAR EL MOUSE 
+
+.ciudad-recital:hover {
+    border-color: #e00000;
+    transform: translateY(-4px);
+}
+
+.ciudad-recital:hover h3 {
+    color: #e00000;
+}*/
+
+
+/* =================================================
+   RESPONSIVE
+================================================= 
+
+@media (max-width: 700px) {
+
+    .ciudades-recitales {
+        grid-template-columns: 1fr;
+    }
+
+}*/
+
+/* =========================
+   CIUDADES DE RECITALES
+========================= */
+
+.ciudades-recitales {
+    margin-top: 70px;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 2px;
+}
+
+.ciudad-recital {
+    position: relative;
+
+    min-height: 190px;
+
+    padding: 25px;
+
+    background: #080808;
+
+    border: 1px solid #1b1b1b;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    overflow: hidden;
+
+    transition: 0.4s ease;
+}
+
+.ciudad-recital::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.15)
+        );
+
+    pointer-events: none;
+}
+
+.ciudad-recital:hover {
+    border-color: #d00000;
+    transform: translateY(-5px);
+}
+
+.ciudad-recital h3,
+.ciudad-recital p {
+    position: relative;
+    z-index: 1;
+}
+
+.ciudad-recital h3 {
+    color: #fff;
+
+    font-size: 19px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 7px;
+}
+
+.ciudad-recital p {
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+/* =========================
+   FOTOS DE FONDO
+========================= */
+
+.ciudad-recital:nth-child(1) {
+    background-image: url("img/bsas.jpeg");
+}
+
+.ciudad-recital:nth-child(2) {
+    background-image: url("img/cordoba.jpeg");
+}
+
+.ciudad-recital:nth-child(3) {
+    background-image: url("img/rosario.jpeg");
+}
+
+.ciudad-recital:nth-child(4) {
+    background-image: url("img/uru.jpeg");
+}
+
+.ciudad-recital:nth-child(5) {
+    background-image: url("img/madrid.jpeg");
+}
+
+.ciudad-recital:nth-child(6) {
+    background-image: url("img/barcelona.jpeg");
+}
+
+.ciudad-recital:nth-child(7) {
+    background-image: url("img/uruguay.jpeg");
+}
+
+.ciudad-recital:nth-child(8) {
+    background-image: url("img/rc.jpeg");
+}
+
+.ciudad-recital:nth-child(9) {
+    background-image: url("img/peru.jpeg");
+}
+
+.ciudad-recital:nth-child(10) {
+    background-image: url("img/rec.jpeg");
+}
+
+
+/* La imagen ocupa toda la tarjeta */
+
+.ciudad-recital {
+    background-size: cover;
+    background-position: center;
+}
+.quiz-pregunta {
+    display: none;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    background: #050505;
+}

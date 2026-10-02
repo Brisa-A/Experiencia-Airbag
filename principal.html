@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Airbag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Airbag Experience</h1>
+        <button id="menu-toggle" aria-label="Abrir menú">
+    ☰
+</button>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#musica">Musica</a>
+            <a href="#banda">Banda</a>
+            <a href="#recitales">Recitales</a>
+            <a href="#galeria">Galeria</a>           
+            <a href="#quiz">Quiz</a>
+            <a href="#experiencia">Tu experiencia airbag</a>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="inicio">
+            <div class="contenido-inicio">
+                <p class="subtitulo">Una experiencia unica</p>
+                <h2>Experiencia<br>Airbag</h2>
+                <p class="frase">
+                    No es solo una banda <br>
+                    de rock
+                </p>
+            <button onclick="document.getElementById('explorar').scrollIntoView({behavior: 'smooth'})">
+    Entrar</button>
+            </div>
+        </section>
+        <section id="explorar" class="explorar">
+
+    <div class="titulo-seccion">
+        <p>EL VIAJE RECIÉN COMIENZA</p>
+        <h2>descubrí el universo Airbag</h2>
+    </div>
+
+
+<div class="opciones">
+
+    <a href="#musica" class="opcion">
+        <!-- <span>01</span> -->
+        <h3>Música</h3>
+        <p>Discos, canciones y momentos que marcaron la historia.</p>
+    </a>
+
+    <a href="#banda" class="opcion">
+        <!--<span>02</span>-->
+        <h3>La banda</h3>
+        <p>Conocé la historia detrás de Airbag.</p>
+    </a>
+
+    <a href="#recitales" class="opcion">
+        <!--<span>03</span>-->
+        <h3>Recitales</h3>
+        <p>Viví la energía de sus shows.</p>
+    </a>
+
+    <a href="#galeria" class="opcion">
+        <!--span>04</span-->
+        <h3>Galería</h3>
+        <p>Noches, escenarios y momentos inolvidables.</p>
+    </a>
+  
+
+    <a href="#quiz" class="opcion">
+        <!--span>05</span-->
+        <h3>Quiz</h3>
+        <p>¿Cuánto sabés sobre Airbag?</p>
+    </a>
+
+    <a href="#experiencia" class="opcion">
+        <!--span>06</span-->
+        <h3>Tu experiencia Airbag</h3>
+        <p>Contá qué significa Airbag para vos.</p>
+    </a>
+  
+</div>
+
+</section> 
+
+
+<section id="musica" class="musica">
+
+    <div class="titulo-seccion">
+        <p>SU MÚSICA</p>
+        <h2>El sonido de Airbag</h2>
+    </div>
+
+    <div class="musica-contenido">
+
+        <!-- =========================
+             DISCOGRAFÍA
+        ========================== -->
+
+        <aside class="discografia">
+
+            <div class="discografia-titulo">
+                <!-- <span>01 — DISCOS</span> -->
+                <h3>Discografía</h3>
+            </div>
+
+            <div class="album-lista">
+
+                <!-- ÁLBUM 1 -->
+                <button class="album-boton" onclick="mostrarAlbum('Airbag')">
+                    <img src="img/Airbag(2004).jpeg" alt="Airbag">
+                    <div class="album-info">
+                        <strong>Airbag</strong>
+                        <small>2004</small>
+                    </div>
+                </button>
+
+                <!-- ÁLBUM 2 -->
+                <button class="album-boton" onclick="mostrarAlbum('BlancoyNegro')">
+                    <img src="img/BlancoyNegro(2006).jpg" alt="Blanco y Negro">
+                    <div class="album-info">
+                        <strong>Blanco y Negro</strong>
+                        <small>2006</small>
+                    </div>
+                </button>
+
+                <!-- ÁLBUM 3 -->
+                <button class="album-boton" onclick="mostrarAlbum('Tokyo')">
+                    <img src="img/UnaHoraAtokyo(2009).png" alt="Una Hora a Tokyo">
+                    <div class="album-info">
+                        <strong>Una Hora a Tokyo</strong>
+                        <small>2009</small>
+                    </div>
+                </button>
+
+                <!-- ÁLBUM 4 -->
+                <button class="album-boton" onclick="mostrarAlbum('Vorágine')">
+                    <img src="img/Voragine(2011).png" alt="Vorágine">
+                    <div class="album-info">
+                        <strong>Vorágine</strong>
+                        <small>2011</small>
+                    </div>
+                </button>
+
+                <!-- ÁLBUM 5 -->
+                <button class="album-boton" onclick="mostrarAlbum('Libertad')">
+                    <img src="img/Libertad(2013).jpg" alt="Libertad">
+                    <div class="album-info">
+                        <strong>Libertad</strong>
+                        <small>2013</small>
+                    </div>
+                </button>
+
+                <!-- ÁLBUM 6 -->
+                <button class="album-boton" onclick="mostrarAlbum('Mentira')">
+                    <img src="img/MentiraLaVerdad(2016).png" alt="Mentira La Verdad">
+                    <div class="album-info">
+                        <strong>Mentira La Verdad</strong>
+                        <small>2016</small>
+                    </div>
+                </button>
+
+                 <!-- ÁLBUM 7 -->
+                <button class="album-boton" onclick="mostrarAlbum('Trampa')">
+                    <img src="img/AlParecerTodoHaSidoUnaTrampa(2021).png" alt="Al Parecer Todo Ha Sido una Trampa">
+                    <div class="album-info">
+                        <strong>Al Parecer Todo Ha Sido una Trampa</strong>
+                        <small>2021</small>
+                    </div>
+                </button>
+
+                 <!-- ÁLBUM 8 -->
+                <button class="album-boton" onclick="mostrarAlbum('Velez')">
+                    <img src="img/EnVivoEstadioVelez(2024).png" alt="En Vivo-Estadio VelezSarsfield">
+                    <div class="album-info">
+                        <strong>En Vivo-Estadio VelezSarsfield</strong>
+                        <small>2024</small>
+                    </div>
+                </button>
+
+                 <!-- ÁLBUM 9 -->
+                <button class="album-boton" onclick="mostrarAlbum('Club')">
+                    <img src="img/ElClubDeLaPelea(2025).png" alt="El Club de la Pelea">
+                    <div class="album-info">
+                        <strong>El Club de la Pelea</strong>
+                        <small>2025</small>
+                    </div>
+                </button>
+
+
+            </div>
+
+        </aside>
+
+
+          <!-- =========================
+             INFORMACIÓN DE LOS ÁLBUMES
+        ========================= -->
+
+        <div class="albumes-contenido">
+
+            <!-- MENSAJE INICIAL -->
+            <div id="album-vacio" class="album-vacio">
+                <h3>Elegí un álbum</h3>
+                <p>
+                    Hacé clic en una de las portadas para descubrir
+                    sus canciones.
+                </p>
+            </div>
+
+            
+            <!-- AIRBAG -->
+            <div id="album-airbag" class="album-seleccionado">
+
+                <div class="album-header">
+                    <img src="img/Airbag(2004).jpeg" alt="Airbag">
+
+                    <div>
+                        <h3>Airbag</h3>
+                        <p>2004</p>
+                    </div>
+                </div>
+
+                <!--<p class="album-descripcion">
+                    Álbum debut de la banda.
+                </p>-->
+
+                <div class="album-datos">
+                    <!--<span>2004</span>
+                    <span>Rock</span>-->
+                </div>
+
+                <div class="lista-canciones">
+                    <h4>Canciones</h4>
+
+                    <p>01. La partida de la gitana</p>
+
+                    <p>02. Quiero estar contigo</p>
+
+                    <p>03. Solo aquí</p>
+
+                    <p>04. Esperando otra vez</p>
+
+                    <p>05. Será por ti</p>
+
+                    <p>06. Dejaré la ciudad</p>
+
+                    <p>07. No me abandones</p>
+
+                    <p>08. No puedo olvidarte</p>
+
+                    <p>09. Salía del colegio</p>
+
+                    <p>10. Ya no recuerdo</p>
+
+                    <p>11. Tus ojos me engañan</p>
+
+                    <p>12. Desesperado</p>
+                </div>
+
+            </div>
+
+
+            <!-- BLANCO Y NEGRO -->
+            <div id="album-blancoynegro" class="album-seleccionado">
+
+                <div class="album-header">
+                    <img src="img/BlancoyNegro(2006).jpg" alt="Blanco y Negro">
+
+                    <div>
+                        <h3>Blanco y Negro</h3>
+                        <p>2006</p>
+                    </div>
+                </div>
+
+                <!--<p class="album-descripcion">
+                    Segundo disco con canciones destacadas como "Amor de verano".
+                </p>-->
+
+                <div class="album-datos">
+                    <!--<span>2008</span>
+                    <span>Rock</span>-->
+                </div>
+
+                <div class="lista-canciones">
+                    <h4>Canciones</h4>
+
+                    <p>01. All Night Long</p>
+
+                    <p>02. Amor de verano</p>
+
+                    <p>03. Sin tu amor</p>
+
+                    <p>04. Mi razón</p>
+
+                    <p>05. Carol, no dejes la ciudad</p>
+
+                    <p>06. Esta noche</p>
+
+                    <p>07. Doctora</p>
+
+                    <p>08. Buscandote</p>
+
+                    <p>09. Comenzar</p>
+
+                    <p>10. Viejo amigo</p>
+
+                    <p>11. Y tú</p>
+                </div>
+
+            </div>
+
+
+            <!-- UNA HORA A TOKYO -->
+            <div id="album-tokyo" class="album-seleccionado">
+
+                <div class="album-header">
+                    <img src="img/UnaHoraAtokyo(2009).png" alt="Una Hora a Tokyo">
+
+                    <div>
+                        <h3>Una Hora a Tokyo</h3>
+                        <p>2009</p>
+                    </div>
+                </div>
+
+                <!--<p class="album-descripcion">
+                    Tercer disco, contiene el exitoso sencillo "Ella no está".
+                </p>-->
+
+                <div class="album-datos">
+                   <!-- <span>2011</span>
+                    <span>Rock</span>-->
+                </div>
+
+                <div class="lista-canciones">
+                    <h4>Canciones</h4>
+
+                    <p>01. ¿Revolución?</p>
+
+                    <p>02. Mi sensación</p>
+
+                    <p>03. Una Hora a Tokyo</p>
+
+                    <p>04. Noches de abril</p>
+
+                    <p>05. Lo sentirás</p>
+
+                    <p>06. Lejos del sol</p>
+
+                    <p>07. Ella no está</p>
+
+                    <p>08. Un dia diferente</p>
+
+                    <p>09. Dulce condena</p>
+
+                    <p>10. Algo en mi mente</p>
+
+                    <p>11. Sinfonía eléctrica</p>
+
+                    <p>12. Blues</p>
+                </div>
+
+            </div>
+
+
+            <!-- VORAGINE -->
+            <div id="album-voragine" class="album-seleccionado">
+
+                <div class="album-header">
+                    <img src="img/Voragine(2011).png" alt="Voragine">
+
+                    <div>
+                        <h3>Voragine</h3>
+                        <p>2011</p>
+                    </div>
+                </div>
+
+                <!--<p class="album-descripcion">
+                    cuarto álbum, contiene el exito "Cae el sol".
+                </p>-->
+
+                <div class="album-datos">
+                    <!--<span>2013</span>
+                    <span>Rock</span>-->
+                </div>
+
+                <div class="lista-canciones">
+                    <h4>Canciones</h4>
+
+                    <p>01. Tu Nombre</p>
+
+                    <p>02. Donde Vas</p>
+
+                    <p>03. Cadenas</p>
+
+                    <p>04. Tu Locura</p>
+
+                    <p>05. Cae el sol</p>
+
+                    <p>06. Estado Salvaje</p>
+
+                    <p>07. Bajos Instintos</p>
+
+                    <p>08. Diez Días Después</p>
+
+                    <p>09. Vorágine</p>
+
+                    <p>10. Encerrada en el Placard</p>
+
+                    <p>11. Mecanismos de Control</p>
+
+                    <p>12. Otoño del 82</p>
+                </div>
+
+            </div>
+
+
+            <!-- LIBERTAD -->
+            <div id="album-libertad" class="album-seleccionado">
+
+                <div class="album-header">
+                    <img src="img/Libertad(2013).jpg" alt="Libertad">
+
+                    <div>
+                        <h3>Libertad</h3>
+                        <p>2013</p>
+                    </div>
+                </div>
+
+                <!--<p class="album-descripcion">
+                    Una etapa más madura en la historia de Airbag.
+                </p>-->
+
+                <div class="album-datos">
+                    <!--<span>2016</span>
+                    <span>Rock</span>-->
+                </div>
+
+                <div class="lista-canciones">
+                    <h4>Canciones</h4>
+
+                    <p>01. Fugitivo</p>
+
+                    <p>02. Algo Personal</p>
+
+                    <p>03. Por Mil Noches</p>
+
+                    <p>04. Sube Sube(El Peso del Mundo)</p>
+
+                    <p>05. Sacrificios</p>
+
+                    <p>06. Noches de Insomnio</p>
+
+                    <p>07. Todo Pasa</p>
+
+                    <p>08. La Moda del Montón</p>
+
+                    <p>09. Navidad</p>
+
+                    <p>10. Sonidos Criminales</p>
+
+                    <p>11. Libertad</p>
+
+                    <p>12. Acrata</p>
+
+                    <p>13. Multitud</p>
+
+                    <p>14. Kalashnikov</p>
+
+                    <p>15. Testigos de la Destrucción</p>
+                </div>
+
+            </div>
+
+
+            <!-- MENTIRA LA VERDAD -->
+            <div id="album-mentira" class="album-seleccionado">
+
+                <div class="album-header">
+                    <img src="img/MentiraLaVerdad(2016).png" alt="MentiraLaVerdad">
+
+                    <div>
+                        <h3>Mentira La Verdad</h3>
+                        <p>2016</p>
+                    </div>
+                </div>
+
+                <!--<p class="album-descripcion">
+                    Una nueva etapa de Airbag con canciones de gran impacto.
+                </p>-->
+
+                <div class="album-datos">
+                    <!--<span>2021</span>
+                    <span>Rock</span>-->
+                </div>
+
+                <div class="lista-canciones">
+                    <h4>Canciones</h4>
+
+                    <p>01. Huracán</p>
+                    <p>02. Vivamos el Momento</p>
+                    <p>03. Colombiana</p>
+                    <p>04. Gran Encuentro</p>
+                    <p>05. Relámpagos</p>
+                    <p>06. Culpables</p>
+                    <p>07. Cicatrices</p>
+                    <p>08. Primavera 2001</p>
+                    <p>09. Tu banda</p>
+                    <p>10. Apocalipsis Confort</p>
+                    <p>11. Mentira la Verdad</p>
+                </div>
+
+            </div>
+
+
+            <!-- AL PARECER TODO HA SIDO UNA TRAMPA -->
+            <div id="album-trampa" class="album-seleccionado">
+
+                <div class="album-header">
+                    <img src="img/AlParecerTodoHaSidoUnaTrampa(2021).png" alt="trampa">
+
+                    <div>
+                        <h3>Al Parecer Todo Ha Sido Una Trampa</h3>
+                        <p>2021</p>
+                    </div>
+                </div>
+
+                <!--<p class="album-descripcion">
+                    Una nueva etapa de Airbag con un sonido más intenso y potente.
+                </p>-->
+
+                <div class="album-datos">
+                    <!--<span>2025</span>
+                    <span>Rock</span>-->
+                </div>
+
+                <div class="lista-canciones">
+                    <h4>Canciones</h4>
+
+                    <p>01. Intoxicarme</p>
+                    <p>02. Pensamientos</p>
+                    <p>03. Kamikaze</p>
+                    <p>04. Ganas de Verte</p>
+                    <p>05. Jinetes Cromados</p>
+                    <p>06. Va a Ser Difícil Olvidar</p>
+                    <p>07. Cuchillos Guantanamera</p>
+                    <p>08. Campos Elíseos</p>
+                    <p>09. Mamba Negra</p>
+                    <p>10. Motor Enfermo(Frankenstein)</p>
+                    <p>11. Al Parecer Todo Ha Sido Una Trampa</p>
+                    <p>12. Volver a Casa</p>
+                    <p>13. Perdido</p>
+                    <p>14. Como un Diamante</p>
+                    <p>15. Mila, Saturno y el Río</p>
+                    <p>16. über Puber</p>
+                    <p>17. Así de Fácil</p>
+                </div>
+
+            </div>
+
+            
+            <!-- AIRBAG-EN VIVO VELEZ SARSFIELD -->
+            <div id="album-velez" class="album-seleccionado">
+
+                <div class="album-header">
+                    <img src="img/EnVivoEstadioVelez(2024).png" alt="En Vivo-Estadio Velez">
+
+                    <div>
+                        <h3>Airbag-En vivo Estadio Vélez</h3>
+                        <p>2024</p>
+                    </div>
+                </div>
+
+                <!--<p class="album-descripcion">
+                    Una nueva etapa de Airbag con canciones de gran impacto.
+                </p>-->
+
+                <div class="album-datos">
+                    <!--<span>2021</span>
+                    <span>Rock</span>-->
+                </div>
+
+                <div class="lista-canciones">
+                    <h4>Canciones</h4>
+
+                    <p>01. Perdido-En Vivo</p>
+                    <p>02. Por Mil Noches-En Vivo</p>
+                    <p>03. Intoxicarme-En Vivo</p>
+                    <p>04. Solo Aquí-En Vivo</p>
+                    <p>05. Cae el sol-En Vivo</p>
+                    <p>06. Noches de Insomnio-En Vivo</p>
+                    <p>07. Vivamos el Momento-En Vivo</p>
+                    <p>08. Have you ever seen the rain-En Vivo</p>
+                    <p>09. La partida de la gitana-En Vivo</p>
+                    <p>10. Diez Días Después-En Vivo</p>
+                    <p>11. Colombiana-En Vivo</p>
+                    <p>12. Pensamientos-En Vivo</p>
+                    <p>13. Apocalipsis Confort-En Vivo</p>
+                    <p>14. Nunca lo olvides-En Vivo</p>
+                    <p>15. Cuchillos Guantanamera-En Vivo</p>
+                    <p>16. Motor Enfermo-En Vivo</p>
+                    <p>17. Ganas de Verte-En Vivo</p>
+                    <p>18. Huracán-En Vivo</p>
+                    <p>19. Kalashnikov-En Vivo</p>
+                    <p>20. Como un Diamante-En Vivo</p>
+                    <p>21. Mi Sensación-En Vivo</p>
+                    <p>22. La Moda del Montón-En Vivo</p>
+                    <p>23. Uber Puber-En Vivo</p>
+                    <p>24. Jinetes Cromados-En Vivo</p>
+                    <p>25. Himno Nacional Argentino-En Vivo</p>
+                </div>
+
+            </div>
+
+            
+            <!-- EL CLUB DE LA PELEA I -->
+            <div id="album-pelea" class="album-seleccionado">
+
+                <div class="album-header">
+                    <img src="img/ElClubDeLaPelea(2025).png" alt="El club de la pelea">
+
+                    <div>
+                        <h3>El Club de la Pelea</h3>
+                        <p>2025</p>
+                    </div>
+                </div>
+
+                <!--<p class="album-descripcion">
+                    Una nueva etapa de Airbag con canciones de gran impacto.
+                </p>-->
+
+                <div class="album-datos">
+                    <!--<span>2021</span>
+                    <span>Rock</span>-->
+                </div>
+
+                <div class="lista-canciones">
+                    <h4>Canciones</h4>
+
+                    <p>01. No Confíes En Tu Suerte</p>
+                    <p>02. Por Eso Nadie Recordará tu Nombre</p>
+                    <p>03. Extrañas Intenciones</p>
+                    <p>04. Corazón Lunático</p>
+                    <p>05. Nunca Lo Olvides</p>
+                    <p>06. Anarquia en Buenos Aires</p>
+                    <p>07. Verte De Cerca</p>
+                    <p>08. El Hombre Puerco</p>
+                    <p>09. Especial 56</p>
+                    <p>10. Irme Lejos</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================
+     CANCIONES DESTACADAS
+========================== -->
+
+<div class="canciones-destacadas">
+
+    <div class="canciones-titulo">
+        <span>02 — ESCUCHÁ</span>
+
+        <h3>Canciones destacadas</h3>
+
+        <p>
+            Algunas canciones que forman parte
+            del universo Airbag.
+        </p>
+    </div>
+
+    <div class="lista-canciones">
+
+        <div class="cancion">
+            <span class="numero-cancion">01</span>
+
+            <div class="info-cancion">
+                <h4>Por Mil Noches</h4>
+                <p>Libertad</p>
+            </div>
+
+            <button class="play"
+                onclick="mostrarSpotify('5vHWh24GAsXJ7tnIu8v7UN')">
+                ▶
+            </button>
+        </div>
+
+
+        <div class="cancion">
+            <span class="numero-cancion">02</span>
+
+            <div class="info-cancion">
+                <h4>Pensamientos</h4>
+                <p>AlParecerTodoHaSidoUnaTrampa</p>
+            </div>
+
+            <button class="play"
+                onclick="mostrarSpotify('1H7ktqkQx1PIuPfNtqvaBs')">
+                ▶
+            </button>
+        </div>
+
+
+        <div class="cancion">
+            <span class="numero-cancion">03</span>
+
+            <div class="info-cancion">
+                <h4>Cicatrices</h4>
+                <p>MentiraLaVerdad</p>
+            </div>
+
+            <button class="play"
+                onclick="mostrarSpotify('23FJGRug9hlYUIBnrmkIBX')">
+                ▶
+            </button>
+        </div>
+
+
+        <div class="cancion">
+            <span class="numero-cancion">04</span>
+
+            <div class="info-cancion">
+                <h4>Cae el Sol</h4>
+                <p>Vorágine</p>
+            </div>
+
+            <button class="play"
+                onclick="mostrarSpotify('1Mqfdem6pgGVoULjSkkcc9')">
+                ▶
+            </button>
+        </div>
+
+
+        <div class="cancion">
+            <span class="numero-cancion">05</span>
+
+            <div class="info-cancion">
+                <h4>Verte de Cerca</h4>
+                <p>ElClubDeLaPelea</p>
+            </div>
+
+            <button class="play"
+                onclick="mostrarSpotify('3pevHGhwL0brjFQfPABwns')">
+                ▶
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- REPRODUCTOR SPOTIFY -->
+
+    <div id="spotify-player" class="spotify-player">
+
+        <p class="spotify-mensaje">
+            Elegí una canción para escucharla
+        </p>
+
+    </div>
+
+    </div>
+<!--=============================================
+   LA BANDA
+=============================================-->
+<section id="banda" class="banda">
+
+    <div class="titulo-seccion">
+        <p>LA BANDA</p>
+        <h2>Tres hermanos, un mismo sonido</h2>
+    </div>
+
+    <div class="banda-contenido">
+
+        <div class="banda-imagen">
+            <img src="img/banda.jpg" alt="Airbag">
+        </div>
+
+        <div class="banda-texto">
+
+            <span>— AIRBAG —</span>
+
+            <h3>Una historia que sigue sonando</h3>
+
+            <p>
+                Airbag es una banda argentina de rock creada por los hermanos 
+                Patricio, Gastón y Guido Sardelli en Don Torcuato(Provincia 
+                de Buenos Aires). Comenzaron interpretando los clásicos covers de 
+                Chuck Berry, Creedance y The Beatles (entre otros), bajo el nombre de 
+                "Los Nietos de Chuck". Mas tarde empezarian a componer y a realizar sus 
+                primeros pequeños shows y asi uno de sus demos llegarian a las 
+                manos de la compañia Warner Music. Allí grabaron y lanzaron su primer 
+                disco llamado "Airbag" (2004), el cual contiene uno de sus mayores exitos 
+                "La Partida de la Gitana (si te vas)". Años mas tarde la banda sigue sonando 
+                mas fuerte que nunca y llenando grandes estadios con su musica en todo el mundo.
+                Desde sus comienzos, construyeron una identidad
+                propia que combina el rock clásico, la energía
+                de los escenarios y una fuerte conexión con su público, el resto es historia...
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- =================================================
+         INTEGRANTES
+    ================================================== -->
+
+    <div class="integrantes">
+
+        <div class="integrantes-titulo">
+
+            <span>
+                 — INTEGRANTES —
+            </span>
+
+            <h3>
+                Conocé a los Sardelli
+            </h3>
+
+            <p>
+                Tocá cada integrante para conocer más sobre él.
+            </p>
+
+        </div>
+
+
+        <!-- PATRICIO -->
+
+        <div class="integrante">
+
+            <button
+                class="integrante-boton"
+                onclick="toggleIntegrante('patricio')">
+
+                <img
+                    src="img/patricio.jpeg"
+                    alt="Patricio Sardelli">
+
+                <div>
+
+                    <span>
+                        
+                    </span>
+
+                    <h4>
+                        Patricio Sardelli
+                    </h4>
+
+                    <p>
+                        Voz · Guitarra · Teclados
+                    </p>
+
+                </div>
+
+                <strong>
+                    +
+                </strong>
+
+            </button>
+
+
+            <div
+                id="patricio"
+                class="integrante-info">
+
+                <p>
+                    <strong>
+                        Nacimiento:
+                    </strong>
+                    26 de enero de 1986.
+                </p>
+
+                <p>
+                    <strong>
+                        Lugar:
+                    </strong>
+                    Don Torcuato, Buenos Aires.
+                </p>
+
+                <p>
+                    <strong>
+                        Rol:
+                    </strong>
+                    Voz principal, guitarra y teclados.
+                </p>
+
+                <p>
+                    Patricio es uno de los hermanos fundadores
+                    de Airbag y participa como cantante, guitarrista
+                    y compositor de la banda.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- GASTÓN -->
+
+        <div class="integrante">
+
+            <button
+                class="integrante-boton"
+                onclick="toggleIntegrante('gaston')">
+
+                <img
+                    src="img/gaston.jpeg"
+                    alt="Gastón Sardelli">
+
+                <div>
+
+                    <span>
+                        
+                    </span>
+
+                    <h4>
+                        Gastón Sardelli
+                    </h4>
+
+                    <p>
+                        Bajo · Coros
+                    </p>
+
+                </div>
+
+                <strong>
+                    +
+                </strong>
+
+            </button>
+
+
+            <div
+                id="gaston"
+                class="integrante-info">
+
+                <p>
+                    <strong>
+                        Nacimiento:
+                    </strong>
+                    18 de abril de 1982.
+                </p>
+
+                <p>
+                    <strong>
+                        Lugar:
+                    </strong>
+                    Don Torcuato, Buenos Aires.
+                </p>
+
+                <p>
+                    <strong>
+                        Rol:
+                    </strong>
+                    Bajo y coros.
+                </p>
+
+                <p>
+                    Gastón es el mayor de los hermanos Sardelli
+                    y encargado del bajo y los coros de la banda.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- GUIDO -->
+
+        <div class="integrante">
+
+            <button
+                class="integrante-boton"
+                onclick="toggleIntegrante('guido')">
+
+                <img
+                    src="img/guido.jpeg"
+                    alt="Guido Sardelli">
+
+                <div>
+
+                    <span>
+                        
+                    </span>
+
+                    <h4>
+                        Guido Sardelli
+                    </h4>
+
+                    <p>
+                        Guitarra · Voz · Batería
+                    </p>
+
+                </div>
+
+                <strong>
+                    +
+                </strong>
+
+            </button>
+
+
+            <div
+                id="guido"
+                class="integrante-info">
+
+                <p>
+                    <strong>
+                        Nacimiento:
+                    </strong>
+                    5 de diciembre de 1988.
+                </p>
+
+                <p>
+                    <strong>
+                        Lugar:
+                    </strong>
+                    Don Torcuato, Buenos Aires.
+                </p>
+
+                <p>
+                    <strong>
+                        Rol:
+                    </strong>
+                    Guitarra, voz y batería.
+                </p>
+
+                <p>
+                    Guido es el menor de los sardellis, comenzó tocando 
+                    la batería y desde 2008 pasó a ocupar un rol central 
+                    en guitarra y voz.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- FIN PRESENTACION INTEGRANTES-->
+
+
+<section id="recitales" class="recitales">
+
+    <div class="titulo-seccion">
+        <p>EN VIVO</p>
+        <h2>La energía de un recital</h2>
+    </div>
+
+    <div class="recital-principal">
+
+        <div class="recital-imagen">
+            <img src="img/patri.jpeg" alt="Airbag en recital">
+        </div>
+
+        <div class="recital-info">
+
+            <span>— EN VIVO —</span>
+
+            <h3>Cuando las luces se apagan, empieza el show.</h3>
+
+            <p>
+                Miles de personas, luces, guitarras y canciones
+                cantadas a una sola voz.
+            </p>
+
+            <p>
+                Los recitales son una parte fundamental de la experiencia
+                Airbag y de la conexión que la banda construyó con
+                su público.
+            </p>
+
+            <div class="recital-dato">
+                <strong></strong>
+                <span>El escenario</span>
+            </div>
+
+            <div class="recital-dato">
+                <strong></strong>
+                <span>El público</span>
+            </div>
+
+            <div class="recital-dato">
+                <strong></strong>
+                <span>La música</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <div class="ciudades-recitales">
+
+
+        <div class="ciudad-recital">
+
+            <span>
+                🇦🇷
+            </span>
+
+            <h3>
+                Buenos Aires
+            </h3>
+
+            <p>
+                Estadio River Plate · Estadio Vélez Sarsfield
+            </p>
+
+        </div>
+
+
+        <div class="ciudad-recital">
+
+            <span>
+                🇦🇷
+            </span>
+
+            <h3>
+                Córdoba
+            </h3>
+
+            <p>
+                La Plaza de la Música · Estadio Kempes
+            </p>
+
+        </div>
+
+
+        <div class="ciudad-recital">
+
+            <span>
+                🇦🇷
+            </span>
+
+            <h3>
+                Rosario
+            </h3>
+
+            <p>
+                Metropolitano
+            </p>
+
+        </div>
+
+
+        <div class="ciudad-recital">
+
+            <span>
+                🇺🇾
+            </span>
+
+            <h3>
+                Montevideo
+            </h3>
+
+            <p>
+                Antel Arena
+            </p>
+
+        </div>
+
+
+        <div class="ciudad-recital">
+
+            <span>
+                🇪🇸
+            </span>
+
+            <h3>
+                Madrid
+            </h3>
+
+            <p>
+                Distintos escenarios de la ciudad
+            </p>
+
+        </div>
+
+
+        <div class="ciudad-recital">
+
+            <span>
+                🇪🇸
+            </span>
+
+            <h3>
+                Barcelona
+            </h3>
+
+            <p>
+                Sant Jordi Club
+            </p>
+
+        </div>
+
+
+        <div class="ciudad-recital">
+
+            <span>
+                🇲🇽
+            </span>
+
+            <h3>
+                Ciudad de México
+            </h3>
+
+            <p>
+                Teatro Metropólitan
+            </p>
+
+        </div>
+
+
+        <div class="ciudad-recital">
+
+            <span>
+                🇨🇱
+            </span>
+
+            <h3>
+                Santiago
+            </h3>
+
+            <p>
+                Giras internacionales
+            </p>
+
+        </div>
+
+
+        <div class="ciudad-recital">
+
+            <span>
+                🇵🇪
+            </span>
+
+            <h3>
+                Lima
+            </h3>
+
+            <p>
+                Giras internacionales
+            </p>
+
+        </div>
+
+
+        <div class="ciudad-recital">
+
+            <span>
+                🇨🇴
+            </span>
+
+            <h3>
+                Bogotá
+            </h3>
+
+            <p>
+                Royal Center
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section id="galeria" class="galeria">
+
+    <div class="titulo-seccion">
+        <p>GALERÍA</p>
+        <h2>Momentos que quedan</h2>
+    </div>
+
+    <div class="galeria-grid">
+
+        <div class="foto foto-grande">
+            <img src="img/fotodeportada.jpeg" alt="Airbag">
+        </div>
+
+        <div class="foto">
+            <img src="img/uru.jpeg" alt="Airbag">
+        </div>
+
+        <div class="foto">
+            <img src="img/rec.jpeg" alt="Airbag">
+        </div>
+
+        <div class="foto foto-ancha">
+            <img src="img/musica.jpg" alt="Airbag en vivo">
+        </div>
+
+        <div class="foto">
+            <img src="img/bsas.jpeg" alt="Airbag">
+        </div>
+
+        <div class="foto">
+            <img src="img/up.jpeg" alt="Experiencia Airbag">
+        </div>
+        
+        <div class="foto">
+            <img src="img/tre.jpeg" alt="Experiencia Airbag">
+        </div>
+        
+        <div class="foto">
+            <img src="img/hur.jpeg" alt="Experiencia Airbag">
+        </div>
+         <div class="foto">
+            <img src="img/tr.jpeg" alt="Experiencia Airbag">
+        </div>
+
+    </div>
+
+</section>
+
+<section id="quiz" class="quiz">
+
+    <div class="titulo-seccion">
+        <p>EL DESAFÍO</p>
+        <h2>¿Cuánto sabés sobre Airbag?</h2>
+    </div>
+
+    <div class="quiz-contenedor">
+
+        <div class="quiz-intro">
+            <span>01 — AIRBAG QUIZ</span>
+
+            <h3>
+                Poné a prueba
+                tus conocimientos.
+            </h3>
+
+            <p>
+                Respondé las preguntas y descubrí
+                cuánto conocés sobre la historia,
+                la música y los recitales de Airbag.
+            </p>
+
+            <button id="comenzar-quiz">
+                Comenzar juego
+            </button>
+        </div>
+
+        <div class="quiz-pregunta" id="quiz-pregunta">
+
+            <div class="progreso">
+    <div id="barra-progreso"></div>
+</div>
+
+            <span id="numero-pregunta">Pregunta 01</span>
+
+            <h3 id="texto-pregunta">
+                ¿En qué año se formó Airbag?
+            </h3>
+
+            <div class="respuestas">
+
+                <button class="respuesta">
+                    1999
+                </button>
+
+                <button class="respuesta">
+                    2002
+                </button>
+
+                <button class="respuesta">
+                    2005
+                </button>
+
+                <button class="respuesta">
+                    2010
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="experiencia" class="experiencia">
+
+    <div class="titulo-seccion">
+        <p> — TU EXPERIENCIA — </p>
+        <h2> Ahora es tu turno!!</h2>
+    </div>
+
+    <div class="experiencia-contenido">
+
+        <div class="experiencia-texto">
+            <span></span>
+
+           <h3> 
+            ¿Qué significa Airbag para vos?
+                
+            </h3>
+
+            <p>
+                Hay canciones que simplemente escuchamos
+                y otras que terminan formando parte de nuestra historia,
+                queremos conocer cual es la tuya.
+            </p>
+
+            <p>
+                Contanos qué canción, recital o momento
+                de Airbag significa algo especial para vos.
+                Al final vas a poder ver quienes ya compartieron
+                la suya y como lo viven ellos.
+            </p>
+        </div>
+
+        <form id="form-experiencia" class="experiencia-form">
+
+            <label for="nombre">Tu nombre o apodo</label>
+            <input
+                type="text"
+                id="nombre"
+                placeholder="¿Cómo te llamamos?"
+                required
+            >
+
+            <label for="cancion">Tu canción favorita</label>
+            <input
+                type="text"
+                id="cancion"
+                placeholder="Ej: Cae el sol"
+                required
+            >
+
+            <label for="mensaje">Tu experiencia</label>
+            <textarea
+                id="mensaje"
+                rows="6"
+                placeholder="Contanos tu historia..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                Compartir mi experiencia
+            </button>
+
+        </form>
+
+    </div>
+
+    <div id="experiencias-publicadas" class="experiencias-publicadas"></div>
+
+</section>
+    </main>
+    <script src="script.js"></script>
+<script>
+
+function mostrarSpotify(idCancion) {
+
+    const reproductor = document.getElementById("spotify-player");
+
+    reproductor.innerHTML = `
+        <iframe
+            src="https://open.spotify.com/embed/track/${idCancion}?utm_source=generator"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+        </iframe>
+    `;
+
+    reproductor.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+}
+
+</script>
+
+<!-- =========================
+     JAVASCRIPT DE LA DISCOGRAFÍA
+========================= -->
+
+<script>
+
+function mostrarAlbum(album) {
+
+    // Ocultar el mensaje inicial
+    const mensaje = document.getElementById("album-vacio");
+
+    if (mensaje) {
+        mensaje.style.display = "none";
+    }
+
+    // Ocultar todos los álbumes
+    const albumes = document.querySelectorAll(".album-seleccionado");
+
+    albumes.forEach(function(elemento) {
+        elemento.style.display = "none";
+    });
+
+    // Quitar la selección de todos los botones
+    const botones = document.querySelectorAll(".album-boton");
+
+    botones.forEach(function(boton) {
+        boton.classList.remove("activo");
+    });
+
+    // Convertimos el nombre recibido en el nombre del ID
+    const nombres = {
+        "Airbag": "album-airbag",
+        "BlancoyNegro": "album-blancoynegro",
+        "Tokyo": "album-tokyo",
+        "Vorágine": "album-voragine",
+        "Libertad": "album-libertad",
+        "Mentira": "album-mentira",
+        "Trampa": "album-trampa",
+        "Velez": "album-velez",
+        "Club": "album-pelea"
+        
+    };
+
+    // Buscamos el álbum
+    const albumSeleccionado = document.getElementById(nombres[album]);
+
+    if (albumSeleccionado) {
+
+        // Mostrar el álbum
+        albumSeleccionado.style.display = "block";
+
+        // Marcar el botón seleccionado
+        botones.forEach(function(boton) {
+
+            if (boton.getAttribute("onclick") === "mostrarAlbum('" + album + "')") {
+                boton.classList.add("activo");
+            }
+
+        });
+
+        // Llevar suavemente hasta el álbum
+        albumSeleccionado.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
+        });
+    }
+}
+
+</script>
+<script>
+function toggleIntegrante(id) {
+
+    const informacion = document.getElementById(id);
+
+    if (!informacion) {
+        return;
+    }
+
+    // Comprobar si ya está abierto
+    const estaAbierto = informacion.classList.contains("activo");
+
+    // Cerrar todos los integrantes
+    document.querySelectorAll(".integrante-info").forEach(function(elemento) {
+        elemento.classList.remove("activo");
+    });
+
+    // Abrir el seleccionado si estaba cerrado
+    if (!estaAbierto) {
+        informacion.classList.add("activo");
+    }
+}
+</script>
+</body>
+</html>
